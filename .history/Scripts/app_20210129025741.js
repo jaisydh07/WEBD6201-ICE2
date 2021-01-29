@@ -117,11 +117,11 @@ let Contact = /** @class */ (function () {
 
         let sendButton = document.getElementById("sendButton");
         sendButton.addEventListener("click", function(event){
-            event.preventDefault();
-            
-            let contact = new Contact(fullName.value, contactNumber.value, emailAddress.value);
+            //event.preventDefault();
 
-            console.log(contact.toString());
+            console.log(fullName.value);
+            console.log(contactNumber.value);
+            console.log(emailAddress.value);
         });
     }
 
