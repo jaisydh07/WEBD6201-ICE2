@@ -161,9 +161,6 @@
           case "Contact":
               displayContact();
             break;
-          case "Contact-List":
-              displayContactList();
-            break;  
         }
         
     }
