@@ -151,7 +151,7 @@ class Contact {
             
             let contact = new Contact(fullName.value, contactNumber.value, emailAddress.value);
 
-            console.log(contact);
+            console.log(contact.toString());
         });
     }
 
