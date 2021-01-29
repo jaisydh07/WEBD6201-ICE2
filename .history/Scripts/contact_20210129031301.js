@@ -60,43 +60,4 @@ class Contact {
     {
       return `Full Name     : ${this.m_fullName} \nContact Number: ${this.m_contactNumber}\nEmail Address : ${this.m_emailAddress}`;
     }
-
-    /**
-     * This method returns a JSON object made up of the properties of the Contact class
-     *
-     * @returns {Object}
-     */
-    toJSON()
-    {
-      return {
-        "fullName": this.fullName,
-        "contactNumber": this.contactNumber,
-        "emailAddress": this.emailAddress
-      }
-    }
-
-    /**
-     * This method converts the Contact into a comma-separated value string
-     *
-     * @returns {string}
-     */
-    serialize()
-    {
-      return `${this.m_fullName},${this.m_contactNumber},${this.m_emailAddress}`;
-    }
-
-    /**
-     * This method takes a comma-separated data string and assigns the values to the Contact class properties
-     *
-     * @param {string} data
-     * @return {void}
-     */
-    deserialize(data)
-    {
-      let propertyArray = data.split(",");
-      this.fullName = propertyArray[0];
-      this.contactNumber = propertyArray[1];
-      this.emailAddress = propertyArray[2];
-    }
-
   } 
